@@ -3,6 +3,12 @@ Scalable Mono repo dockerized backend REST API implementation with Python Flask
 
 [![CodeFactor](https://www.codefactor.io/repository/github/ucdevinda123/monorepo-api/badge)](https://www.codefactor.io/repository/github/ucdevinda123/monorepo-api)
 
+## Architecture:
+
+![diagram](https://user-images.githubusercontent.com/4921099/131813802-c4ae3fd2-3d28-493b-bcbc-3296e9ec09bc.png)
+
+
+
 ## How to Build:
 
 Got to your root directory and
@@ -27,20 +33,21 @@ Monorepo-API (Root)
 
 ## API Enpoint from authentication service
 
-POST http://127.0.0.1/api/v1/auth/token
-Request
-{
-"username":"",
-"password" : ""
-}
+   - **Token** : POST http://127.0.0.1/api/v1/auth/token
 
-Response:
-{
-"access_token": "",
-"code": 200,
-"refresh_token": "",
-"success": true
-}
+      Request
+      {
+      "username":"",
+      "password" : ""
+      }
+
+    Response:
+    {
+    "access_token": "",
+    "code": 200,
+    "refresh_token": "",
+    "success": true
+    }
 
 POST http://127.0.0.1/api/v1/auth/token/refresh
 
