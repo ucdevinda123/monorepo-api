@@ -1,6 +1,8 @@
 # monorepo-api
 Scalable Mono repo dockerized backend REST API implementation with Python Flask
 
+[![CodeFactor](https://www.codefactor.io/repository/github/ucdevinda123/monorepo-api/badge)](https://www.codefactor.io/repository/github/ucdevinda123/monorepo-api)
+
 ## How to Build:
 
 Got to your root directory and
