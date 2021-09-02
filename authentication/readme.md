@@ -1,5 +1,4 @@
-# monorepo-api
-Scalable Mono repo dockerized backend REST API implementation with Python Flask
+## Scalable Mono repo api implementation using Flask
 
 ## How to Build:
 
@@ -80,4 +79,3 @@ Response:
 "name": "tt@erer"
 }
 }
- 

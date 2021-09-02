@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  authentication:
+    build: ./authentication
+    container_name: authentication
+    restart: always
+    environment:
+      - APP_NAME = AUTH_APP
+      - SECRET_KEY=dev
+      - DB_URL=sqlite:///auth.db
+      - JWT_SECRET_KEY=JWT_SECRET_KEY
+    expose:
+      - 8080
+
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    restart: always
+    ports:
+      - "80:80"
